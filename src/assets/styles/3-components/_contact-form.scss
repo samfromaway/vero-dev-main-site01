@@ -1,0 +1,121 @@
+.wrap-contact {
+  background-color: var(--space-blue);
+  width: 400px;
+  filter: var(--drop-shadow01);
+  border-radius: var(--main-border-radius);
+  padding: 1.2rem;
+  margin: 1.5rem;
+}
+
+.wrap-contact h2 {
+  margin-bottom: 20px;
+}
+
+/*------------------------------------------------------------------
+  [ Input ]*/
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  padding-top: 25px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.input,
+.input-textfield {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: rgba(192, 192, 192, 0.315);
+  border-radius: 0 var(--main-border-radius) 0 0;
+  outline: none;
+  padding-left: 8px;
+}
+
+.input-textfield {
+  min-height: 162px;
+  max-height: 500px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: var(--main-border-radius);
+}
+
+.label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid rgb(80, 82, 209);
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.label-input {
+  position: absolute;
+  bottom: 4px;
+  font-size: 1rem;
+  color: rgb(182, 182, 182);
+  left: 8px;
+  transition: all 0.3s ease;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.input:focus + .label .label-input,
+.input:valid + .label .label-input {
+  transform: translateY(-142%);
+}
+
+.input:focus + .label::after,
+.input:valid + .label::after {
+  transform: translateX(0%);
+}
+
+.label-textfield-input {
+  position: absolute;
+  top: 35px;
+  font-size: 1rem;
+  color: rgb(182, 182, 182);
+  left: 8px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-textfield:focus {
+  border: 3px solid rgb(80, 82, 209);
+  padding: 7px;
+  transition: all 0.3s ease;
+}
+
+.input-textfield:focus + .label-textfield .label-textfield-input,
+.input-textfield:valid + .label-textfield .label-textfield-input {
+  transform: translateY(-165%);
+}

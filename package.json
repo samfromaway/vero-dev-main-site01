@@ -1,0 +1,29 @@
+{
+  "name": "dev-world-main-site03",
+  "version": "1.0.0",
+  "description": "Dev-World main site",
+  "main": "index.js",
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  },
+  "scripts": {
+    "dev": "npm run clean && parcel public/index.html --out-dir development -p 3000",
+    "build": "parcel build public/index.html --out-dir dist --public-url ./",
+    "clean": "rimraf ./development && rimraf -rf ./.cache"
+  },
+  "author": "Sam Roellin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "@babel/core": "^7.9.6",
+    "gulp-imagemin": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/runtime-corejs2": "^7.9.6",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.5"
+  },
+  "dependencies": {
+    "parcel-plugin-static-files-copy": "^2.3.1"
+  }
+}

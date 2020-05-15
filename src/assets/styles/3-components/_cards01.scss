@@ -1,0 +1,56 @@
+$card-width: 250px;
+
+.cards01 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0.8rem;
+}
+
+.card01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: $card-width;
+  box-shadow: var(--box-shadow01);
+  border-radius: var(--main-border-radius);
+  margin: 0.625rem;
+  overflow: hidden;
+}
+
+.card01 img {
+  width: 100%;
+  height: $card-width / 1.8;
+  border-radius: var(--main-border-radius) var(--main-border-radius) 0 0;
+  object-fit: cover;
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.card01 img:hover {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card01 h3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card01 i {
+  margin-top: 1rem;
+}
+
+.card01 p {
+  margin-bottom: auto;
+  padding: 0.5rem 1rem 1rem 1rem;
+  text-align: left;
+}
+
+.card01 .button {
+  margin: 1rem 1rem 1.8rem 1rem;
+}

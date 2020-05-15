@@ -1,0 +1,28 @@
+.social-media {
+  position: sticky;
+  height: 8vh;
+  min-height: 60px;
+  overflow: hidden;
+  top: 0;
+  z-index: 1000;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media i {
+  font-size: 45px;
+  margin: 0 2rem 0 2rem;
+  padding: 0;
+  color: rgb(187, 187, 187);
+}
+
+@media screen and (max-width: 768px) {
+  .social-media {
+    justify-content: center;
+  }
+  .social-media i {
+    margin: 0 1.7rem 0 1.7rem;
+  }
+}
