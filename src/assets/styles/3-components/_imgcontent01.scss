@@ -12,6 +12,7 @@
   max-width: 330px;
   text-align: left;
   font-size: 40px;
+  margin: 0.2rem;
 }
 
 .description1 h3 {
@@ -27,13 +28,10 @@
 
 .description1-img {
   width: 100%;
+  margin: 0.3rem;
 }
 
 @media screen and (max-width: 768px) {
-  .description1-img {
-    width: 250px;
-  }
-
   .description1 {
     width: 300px;
   }

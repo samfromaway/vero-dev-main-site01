@@ -19,14 +19,3 @@
 .title06::after {
   background-color: rgb(20, 160, 20);
 }
-
-@media screen and (max-width: 768px) {
-  .title06 {
-    font-size: 1.8rem;
-  }
-
-  .title06::before,
-  .title06::after {
-    width: 20px;
-  }
-}

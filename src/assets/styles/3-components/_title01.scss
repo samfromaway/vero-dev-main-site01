@@ -1,6 +1,6 @@
 .title01 {
   display: flex;
-  font-size: 25px;
+  font-size: 1.4rem;
   justify-content: center;
   align-items: center;
   color: var(--textbright);
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 768px) {
   .title01 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   .title01::before,

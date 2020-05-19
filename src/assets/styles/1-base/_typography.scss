@@ -27,6 +27,7 @@ h3 {
 
 h4 {
   font-size: 1rem;
+  line-height: 1.6;
 }
 
 h5 {
@@ -63,4 +64,11 @@ textarea {
 
 .darktext {
   color: var(--textdark);
+}
+
+.email-link {
+  text-decoration: none;
+}
+.email-link:hover {
+  text-decoration: underline;
 }
