@@ -33,6 +33,17 @@
 
 .content-section1 {
   margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero-spacer {
+  width: 10vw;
+}
+
+.content-section1-2 img {
+  width: 80%;
+  max-width: 500px;
 }
 
 .hero01 .scroll-arrow {

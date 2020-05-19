@@ -8,21 +8,21 @@
   padding: 1rem;
 }
 
-.description1-img-wrapper,
-.description1 {
-  padding: 0.7rem;
-}
-
 .description1 {
   max-width: 330px;
   text-align: left;
+  font-size: 40px;
+}
+
+.description1 h3 {
+  font-size: 23px;
 }
 
 .description1-img-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 330px;
+  width: 220px;
 }
 
 .description1-img {

@@ -47,7 +47,18 @@ $card-width: 250px;
 
 .card01 p {
   margin-bottom: auto;
-  padding: 0.5rem 1rem 1rem 1rem;
+  padding: 0.5em 1em 1em 1em;
+  text-align: left;
+}
+
+.card01 ul {
+  margin-top: 0.5em;
+  padding-bottom: 1.5em;
+  margin-bottom: auto;
+}
+.card01 ul li {
+  color: white;
+  padding: 0.25em;
   text-align: left;
 }
 

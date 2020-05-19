@@ -9,9 +9,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--space-blue);
   width: 250px;
-  box-shadow: var(--box-shadow01);
+  box-shadow: var(--drop-shadow01);
   border-radius: var(--main-border-radius);
   margin: 0.625rem;
   overflow: hidden;
@@ -37,7 +37,9 @@
 .smallcard h3 {
   font-size: 1rem;
   letter-spacing: normal;
-  margin-bottom: auto;
+  margin: 0.5em 0.2em auto 0.2em;
+  letter-spacing: 0px;
+  color: var(--textbright);
 }
 
 .smallcard button {

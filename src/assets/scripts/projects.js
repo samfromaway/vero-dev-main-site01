@@ -7,7 +7,7 @@ const projects = [
     img: '/project-images/howtomedellin01.png',
     icn: '/project-images/Icons02-HTM.png',
     link: 'https://www.how-to-medellin.com/',
-    category: 'webDesign',
+    category: 'webDevelopment',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projects = [
     img: '/project-images/portfolio01.png',
     icn: '/project-images/Icons02-Portfolio.png',
     link: 'https://github.com/samfromaway/portfolio03',
-    category: 'webDesign',
+    category: 'webDevelopment',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projects = [
     img: '/project-images/how-to-expat01.png',
     icn: '/project-images/Icons02-HTE.png',
     link: 'https://www.how-to-expat.com/',
-    category: 'webDesign',
+    category: 'webDevelopment',
   },
   {
     id: 4,
@@ -67,31 +67,38 @@ const projects = [
     img: '/project-images/fluidtechnik01.png',
     icn: '/project-images/Icons02-HTM.png',
     link: 'blog01.html',
-    category: 'webDesign',
+    category: 'webDevelopment',
   },
   {
-    id: 7,
+    id: 8,
     title: 'Engineer Website',
     desc:
       'This website is a knowledge base for Engineers in German speaking countries and containes more than 40 pages.',
     img: '/project-images/pneumatikinfo01.png',
     icn: '/project-images/Icons02-HTM.png',
     link: 'blog01.html',
-    category: 'webDesign',
+    category: 'webDevelopment',
   },
 ];
 
 // filtered array
-const designProjects = projects.filter(designProjectFilter).slice(0, 3);
+const webDevelopmentProjects = projects
+  .filter(webDevelopmentProjectFilter)
+  .slice(0, 3);
 const marketingProjects = projects.filter(marketingProjectFilter).slice(0, 3);
+const designProjects = projects.filter(designProjectFilter).slice(0, 3);
 
 // filtered categories
-function designProjectFilter(projects) {
-  return projects.category === 'webDesign';
+function webDevelopmentProjectFilter(projects) {
+  return projects.category === 'webDevelopment';
 }
 
 function marketingProjectFilter(projects) {
   return projects.category === 'marketing';
+}
+
+function designProjectFilter(projects) {
+  return projects.category === 'design';
 }
 
 //initial load
@@ -101,26 +108,31 @@ window.onload = () => {
 
 // clickevent
 const clickerFn1 = function () {
-  loadProjectData(designProjects);
-  loadSectionDesign();
+  loadProjectData(webDevelopmentProjects);
+  loadSectionWebDevelopment();
 };
 
 const clickerFn2 = function () {
   loadProjectData(marketingProjects);
   loadSectionMarketing();
 };
+const clickerFn3 = function () {
+  loadProjectData(designProjects);
+  loadSectionDesign();
+};
 
 // load Section
-const scrollPosition02 = document.getElementById('title07');
+const scrollPosition02 = document.getElementById('anchor-projects');
 const scrollBehavior01 = 'smooth';
 const fadeAfterClickTime = 500;
 const fadeAfterClickOpacity = 0.3;
 
 // behaviour
-function loadSectionDesign() {
+function loadSectionWebDevelopment() {
   // fade of pictures in menu
   $('#card-image01').fadeTo(fadeAfterClickTime, fadeAfterClickOpacity);
   $('#card-image02').fadeTo(fadeAfterClickTime, 1);
+  $('#card-image03').fadeTo(fadeAfterClickTime, 1);
   appearSection();
 }
 
@@ -128,6 +140,14 @@ function loadSectionMarketing() {
   // fade of pictures in menu
   $('#card-image02').fadeTo(fadeAfterClickTime, fadeAfterClickOpacity);
   $('#card-image01').fadeTo(fadeAfterClickTime, 1);
+  $('#card-image03').fadeTo(fadeAfterClickTime, 1);
+  appearSection();
+}
+function loadSectionDesign() {
+  // fade of pictures in menu
+  $('#card-image02').fadeTo(fadeAfterClickTime, 1);
+  $('#card-image01').fadeTo(fadeAfterClickTime, 1);
+  $('#card-image03').fadeTo(fadeAfterClickTime, fadeAfterClickOpacity);
   appearSection();
 }
 //appear of section
@@ -172,10 +192,14 @@ function loadProjectData(projects) {
 
 const btnchooseCategory01 = document.getElementById('btnchooseCategory01');
 const btnchooseCategory02 = document.getElementById('btnchooseCategory02');
+const btnchooseCategory03 = document.getElementById('btnchooseCategory03');
 const imgchooseCategory01 = document.getElementById('card-image01');
 const imgchooseCategory02 = document.getElementById('card-image02');
+const imgchooseCategory03 = document.getElementById('card-image03');
 
 btnchooseCategory01.addEventListener('click', clickerFn1);
 imgchooseCategory01.addEventListener('click', clickerFn1);
 btnchooseCategory02.addEventListener('click', clickerFn2);
 imgchooseCategory02.addEventListener('click', clickerFn2);
+btnchooseCategory03.addEventListener('click', clickerFn3);
+imgchooseCategory03.addEventListener('click', clickerFn3);

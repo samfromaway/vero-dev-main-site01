@@ -1,0 +1,28 @@
+.title05 {
+  display: flex;
+  font-size: 25px;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--textbright);
+}
+
+.title05::before {
+  content: '';
+  width: 4px;
+  height: 30px;
+  margin: 0 0.7rem 0 0;
+}
+.title05::before {
+  background-color: rgb(255, 102, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .title05 {
+    font-size: 1.8rem;
+  }
+
+  .title05::before,
+  .title05::after {
+    width: 20px;
+  }
+}
