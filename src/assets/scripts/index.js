@@ -11,6 +11,12 @@ const navSlide = () => {
 
 navSlide();
 
+//close mobile menu when link clicked
+function scrollBehaviorMenu() {
+  nav.classList.toggle('nav-active');
+  burger.classList.toggle('burger-active');
+}
+
 //---- Observer ----//
 const appearOptions = {
   threshold: 0,
@@ -49,30 +55,7 @@ const scrollBehavior02 = 'smooth';
 
 document.getElementById('cta-button').onclick = function scrollAboutMe() {
   document
-    .getElementById('anchor-contact')
-    .scrollIntoView({ behavior: scrollBehavior02 });
-  scrollBehaviorMenu();
-};
-
-document.getElementById(
-  'nav-link-about-me'
-).onclick = function scrollAboutMe() {
-  document
-    .getElementById('anchor-about-me')
-    .scrollIntoView({ behavior: scrollBehavior02 });
-  scrollBehaviorMenu();
-};
-
-document.getElementById('nav-link-focus').onclick = function scrollWork() {
-  document
-    .getElementById('anchor-focus')
-    .scrollIntoView({ behavior: scrollBehavior02 });
-  scrollBehaviorMenu();
-};
-
-document.getElementById('nav-link-videos').onclick = function scrollWork() {
-  document
-    .getElementById('anchor-videos')
+    .getElementById('anchor-about')
     .scrollIntoView({ behavior: scrollBehavior02 });
   scrollBehaviorMenu();
 };
@@ -84,16 +67,25 @@ document.getElementById('nav-link-contact').onclick = function scrollContact() {
   scrollBehaviorMenu();
 };
 
-function scrollBehaviorMenu() {
-  nav.classList.toggle('nav-active');
-  burger.classList.toggle('burger-active');
-}
+document.getElementById('nav-link-services').onclick = function scrollWork() {
+  document
+    .getElementById('anchor-services')
+    .scrollIntoView({ behavior: scrollBehavior02 });
+  scrollBehaviorMenu();
+};
+
+document.getElementById('nav-link-about').onclick = function scrollWork() {
+  document
+    .getElementById('anchor-about')
+    .scrollIntoView({ behavior: scrollBehavior02 });
+  scrollBehaviorMenu();
+};
 
 //----Arrow Click Scroll----//
 
 document.getElementById('scroll-arrow').onclick = function scrollNext01() {
   document
-    .getElementById('anchor-focus')
+    .getElementById('anchor-howWeWork')
     .scrollIntoView({ behavior: scrollBehavior02 });
 };
 
