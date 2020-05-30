@@ -4,7 +4,6 @@
   border-radius: var(--main-border-radius);
   overflow: hidden;
   margin: 0.8rem;
-  filter: var(--drop-shadow01);
   color: var(--textbright);
 }
 
@@ -15,11 +14,6 @@
   object-fit: cover;
   position: relative;
   margin: 1em auto;
-}
-
-.card02 img:hover {
-  opacity: 0.5;
-  transition: opacity 0.2s ease-in-out;
 }
 
 .card02 p {

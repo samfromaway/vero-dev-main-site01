@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dev World Digital Agency</title>
+    <meta name="description" content="Code | Marketing | Design" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-xxx"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-xxx');
+    </script>
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../src/images/favicon_1.png"
+    />
+    <link rel="apple-touch-icon" href="../src/images/favicon_1.png" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <link rel="stylesheet" href="../src/assets/styles/main.scss" />
+  </head>
+
+  <body>
+    <header class="header">
+      <section>
+        <nav>
+          <div class="logo">
+            <a href="index"> <img alt="Logo" src="../src/images/logo.png" /></a>
+            <p id="logo-desc">Dev World</p>
+          </div>
+          <ul class="nav-links">
+            <li><a class="nav-link" id="nav-link-services">SERVICES</a></li>
+            <li><a class="nav-link" id="nav-link-about">OUR WORK</a></li>
+            <li><a class="nav-link" id="nav-link-about">ABOUT</a></li>
+            <li><a class="nav-link" id="nav-link-contact">CONTACT</a></li>
+          </ul>
+          <div class="burger-wrapper">
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section
+        class="section02 single-page-section02"
+        style="padding-bottom: 30px;"
+      >
+        <div class="imgcontentwrapper02">
+          <div class="description2-img-wrapper">
+            <h2>We Are</h2>
+            <div class="description2-about-img-wrapper">
+              <div>
+                <img
+                  class="description2-img"
+                  alt="Logo"
+                  src="../src/images/Samuel.jpg"
+                />
+                <p>Sam</p>
+              </div>
+              <div>
+                <img
+                  class="description2-img"
+                  alt="Logo"
+                  src="../src/images/tacha.jpg"
+                />
+                <p>Tacha</p>
+              </div>
+            </div>
+            <div class="description2">
+              <h4>We are already looking forward to your message.</h4>
+            </div>
+          </div>
+
+          <div class="wrap-contact cards-space01">
+            <h2>Contact</h2>
+            <a class="email-link" href="mailto:contact@dev-world.info">
+              <p>contact@dev-world.info</p>
+            </a>
+
+            <form id="myform" class="contact-form" netlify>
+              <div class="wrap-input">
+                <input class="input" type="text" name="name" required />
+                <label for="name" class="label">
+                  <span class="label-input">Name*</span>
+                </label>
+              </div>
+
+              <div class="wrap-input">
+                <input class="input" type="text" name="email" required />
+                <label for="email" class="label">
+                  <span class="label-input">Email*</span>
+                </label>
+              </div>
+
+              <div class="wrap-input">
+                <textarea
+                  class="input-textfield"
+                  name="message"
+                  required
+                ></textarea>
+                <label for="message" class="label-textfield">
+                  <span class="label-textfield-input">Message*</span>
+                </label>
+              </div>
+
+              <button class="button contact-btn">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Scripts -->
+    <script src="../src/assets/scripts/index.js"></script>
+    <script src="../src/assets/scripts/projects.js"></script>
+  </body>
+</html>

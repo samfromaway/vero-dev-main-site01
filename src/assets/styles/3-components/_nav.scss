@@ -3,6 +3,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   min-height: 10vh;
+  /* if min-height changed then also change single-page-section02 class*/
   background-color: black;
   padding: 0 2em;
 }
