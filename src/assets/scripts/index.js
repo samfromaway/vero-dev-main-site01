@@ -50,45 +50,6 @@ document.querySelectorAll('.fadeinanim01').forEach((fade01) => {
   appearOnScroll.observe(fade01);
 });
 
-//----Menu Scroll----//
-const scrollBehavior02 = 'smooth';
-
-document.getElementById('cta-button').onclick = function scrollAboutMe() {
-  document
-    .getElementById('anchor-about')
-    .scrollIntoView({ behavior: scrollBehavior02 });
-  scrollBehaviorMenu();
-};
-
-document.getElementById('nav-link-contact').onclick = function scrollContact() {
-  document
-    .getElementById('anchor-contact')
-    .scrollIntoView({ behavior: scrollBehavior02 });
-  scrollBehaviorMenu();
-};
-
-document.getElementById('nav-link-services').onclick = function scrollWork() {
-  document
-    .getElementById('anchor-services')
-    .scrollIntoView({ behavior: scrollBehavior02 });
-  scrollBehaviorMenu();
-};
-
-document.getElementById('nav-link-about').onclick = function scrollWork() {
-  document
-    .getElementById('anchor-about')
-    .scrollIntoView({ behavior: scrollBehavior02 });
-  scrollBehaviorMenu();
-};
-
-//----Arrow Click Scroll----//
-
-document.getElementById('scroll-arrow').onclick = function scrollNext01() {
-  document
-    .getElementById('anchor-howWeWork')
-    .scrollIntoView({ behavior: scrollBehavior02 });
-};
-
 //----Slick Carousel----//
 
 $(document).ready(function () {
