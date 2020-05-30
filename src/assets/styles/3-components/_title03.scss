@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: var(--textbright);
+  color: var(--textdark);
   text-align: center;
   margin: 0.5em;
 }
@@ -11,7 +11,7 @@
 .title03::before,
 .title03::after {
   content: '';
-  background-color: var(--textbright);
+  background-color: var(--textdark);
   width: 25px;
   height: 3px;
   margin: 0.7rem;

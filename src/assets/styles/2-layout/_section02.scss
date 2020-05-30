@@ -5,7 +5,9 @@
   text-align: center;
   overflow-x: hidden;
   position: relative;
+  color: var(--textdark);
 }
+
 @media screen and (max-width: 768px) {
   .section02 {
     padding: 0.6rem;
